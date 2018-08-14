@@ -1,0 +1,487 @@
+{
+	"id": "8caa9b7a-07d1-df88-99b7-cd0731e7d658",
+	"name": "Spring Teste",
+	"description": "",
+	"order": [],
+	"folders": [
+		{
+			"name": "ApiGateway",
+			"description": "",
+			"collectionId": "8caa9b7a-07d1-df88-99b7-cd0731e7d658",
+			"order": [
+				"68586256-f5a5-c8fd-50ad-841295d7497b",
+				"837e00d8-fd1d-268d-8258-01607967aaa3",
+				"9d59d2f5-9473-8814-73d4-e02d6a425f84",
+				"02434f6e-f8ba-577d-5ed3-17b0dc257e0d"
+			],
+			"owner": "90298",
+			"folders_order": [],
+			"id": "ddf94488-171a-9e4b-8578-ffd699e722ad"
+		},
+		{
+			"name": "ResourceAccount",
+			"description": "",
+			"collectionId": "8caa9b7a-07d1-df88-99b7-cd0731e7d658",
+			"order": [
+				"12697d52-0169-4515-305c-1686ee0f4737",
+				"3886050e-db60-3126-52f6-33ffbc080edc"
+			],
+			"owner": "90298",
+			"folders_order": [],
+			"id": "847adaf2-4424-b10b-09c5-696ea70b6a40"
+		},
+		{
+			"name": "SingleSignOn",
+			"description": "",
+			"collectionId": "8caa9b7a-07d1-df88-99b7-cd0731e7d658",
+			"order": [
+				"ed7436d1-fbe5-b93b-d8f6-71d50ae42ea7",
+				"97944634-dbfc-1501-8faf-4a1bb2079cd8",
+				"dd42f053-14b1-40c0-995c-57062b703e91",
+				"87ff496c-378e-720e-9ffb-a755b957d4ad",
+				"0900ddba-4d94-c10a-67d5-734c7923f76e"
+			],
+			"owner": "90298",
+			"folders_order": [],
+			"id": "53685f7b-63e4-a5cc-db41-121a366a4e24"
+		}
+	],
+	"folders_order": [
+		"53685f7b-63e4-a5cc-db41-121a366a4e24",
+		"847adaf2-4424-b10b-09c5-696ea70b6a40",
+		"ddf94488-171a-9e4b-8578-ffd699e722ad"
+	],
+	"timestamp": 1533717618745,
+	"owner": "90298",
+	"public": false,
+	"requests": [
+		{
+			"id": "02434f6e-f8ba-577d-5ed3-17b0dc257e0d",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer {{token}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{url}}/resources/user/1",
+			"folder": "53685f7b-63e4-a5cc-db41-121a366a4e24",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1534224140447,
+			"name": "Upate User",
+			"description": "",
+			"collectionId": "8caa9b7a-07d1-df88-99b7-cd0731e7d658",
+			"responses": [],
+			"rawModeData": "{\n\t\"name\": \"Morrice Wanderley Morrce\",\n\t\"email\": \"morr@hotmail.com.br\"\n}"
+		},
+		{
+			"id": "0900ddba-4d94-c10a-67d5-734c7923f76e",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{url_auth}}/user/12",
+			"folder": "53685f7b-63e4-a5cc-db41-121a366a4e24",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1534000374896,
+			"name": "Upate User",
+			"description": "",
+			"collectionId": "8caa9b7a-07d1-df88-99b7-cd0731e7d658",
+			"responses": [],
+			"rawModeData": "{\n    \"login\": \"Morrice256-0014\",\n    \"updateDateTime\": 1533995176889,\n    \"password\": \"$2y$12$56H3Z81xJ63MFQr9L2LK7.c6Iqy4QkzVAESIYWYiPmCSZG11ArSTu\"\n}"
+		},
+		{
+			"id": "12697d52-0169-4515-305c-1686ee0f4737",
+			"headers": "//Authorization: Bearer {{token}}\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer {{token}}",
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{url_base}}/user/1",
+			"folder": "53685f7b-63e4-a5cc-db41-121a366a4e24",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "urlencoded",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1534175244683,
+			"name": "Get Users copy",
+			"description": "",
+			"collectionId": "8caa9b7a-07d1-df88-99b7-cd0731e7d658",
+			"responses": []
+		},
+		{
+			"id": "3886050e-db60-3126-52f6-33ffbc080edc",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{url_base}}/user",
+			"folder": "53685f7b-63e4-a5cc-db41-121a366a4e24",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1534099565972,
+			"name": "Save User",
+			"description": "",
+			"collectionId": "8caa9b7a-07d1-df88-99b7-cd0731e7d658",
+			"responses": [],
+			"rawModeData": "{\n\t\"name\": \"Morrice Wanderley\",\n\t\"email\": \"morrice4@hotmail.com.br\",\n\t\"userAuth\" :{\n\t\t\"login\": \"Morrice256-104\",\n\t\t\"password\" : \"$2y$12$bGxTp/8ER2ind3wKXN9FD.JwVsVwO1EzkfyEy8FvYLFzg3OruFSo2\"\n\t}\n}"
+		},
+		{
+			"id": "68586256-f5a5-c8fd-50ad-841295d7497b",
+			"headers": "",
+			"headerData": [],
+			"url": "{{url}}/singlesignon/oauth/token",
+			"folder": "53685f7b-63e4-a5cc-db41-121a366a4e24",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "grant_type",
+					"value": "password",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "username",
+					"value": "Morrice256-001",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "password",
+					"value": "pass",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "client_id",
+					"value": "clientIdPassword",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"tests": "var jsonData = JSON.parse(responseBody);\npostman.setEnvironmentVariable(\"token\", jsonData.access_token);\npostman.setEnvironmentVariable(\"refresh\", jsonData.refresh_token);",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1534214137764,
+			"name": "Autentication - Password",
+			"description": "",
+			"collectionId": "8caa9b7a-07d1-df88-99b7-cd0731e7d658",
+			"responses": []
+		},
+		{
+			"id": "837e00d8-fd1d-268d-8258-01607967aaa3",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer {{token}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{url}}/resources/user/1",
+			"folder": "53685f7b-63e4-a5cc-db41-121a366a4e24",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "urlencoded",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1534222120049,
+			"name": "Get Users",
+			"description": "",
+			"collectionId": "8caa9b7a-07d1-df88-99b7-cd0731e7d658",
+			"responses": []
+		},
+		{
+			"id": "87ff496c-378e-720e-9ffb-a755b957d4ad",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{url_auth}}/user",
+			"folder": "53685f7b-63e4-a5cc-db41-121a366a4e24",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1534220217239,
+			"name": "Save User",
+			"description": "",
+			"collectionId": "8caa9b7a-07d1-df88-99b7-cd0731e7d658",
+			"responses": [],
+			"rawModeData": "{\n\t\"login\": \"Morrice256-002\",\n\t\"password\" : \"pass\"\n}"
+		},
+		{
+			"id": "97944634-dbfc-1501-8faf-4a1bb2079cd8",
+			"headers": "Authorization: Basic Y2xpZW50SWRQYXNzd29yZDpzZWNyZXQ=\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Basic Y2xpZW50SWRQYXNzd29yZDpzZWNyZXQ=",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{url}}/singlesignon/oauth/token",
+			"folder": "53685f7b-63e4-a5cc-db41-121a366a4e24",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "grant_type",
+					"value": "password",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "username",
+					"value": "Morrice256-003",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "password",
+					"value": "pass",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "client_id",
+					"value": "clientIdPassword",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"tests": "var jsonData = JSON.parse(responseBody);\npostman.setEnvironmentVariable(\"token\", jsonData.access_token);\npostman.setEnvironmentVariable(\"refresh\", jsonData.refresh_token);",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1534207902682,
+			"name": "Autentication - New User",
+			"description": "",
+			"collectionId": "8caa9b7a-07d1-df88-99b7-cd0731e7d658",
+			"responses": []
+		},
+		{
+			"id": "9d59d2f5-9473-8814-73d4-e02d6a425f84",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer {{token}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{url}}/resources/user",
+			"folder": "847adaf2-4424-b10b-09c5-696ea70b6a40",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1534222143762,
+			"name": "Save User",
+			"description": "",
+			"collectionId": "8caa9b7a-07d1-df88-99b7-cd0731e7d658",
+			"responses": [],
+			"rawModeData": "{\n\t\"name\": \"Morrice Wanderley\",\n\t\"email\": \"morrice4@hotmail.com.br\",\n\t\"userAuth\" :{\n\t\t\"login\": \"Morrice256-110\",\n\t\t\"password\" : \"$2y$12$bGxTp/8ER2ind3wKXN9FD.JwVsVwO1EzkfyEy8FvYLFzg3OruFSo2\"\n\t}\n}"
+		},
+		{
+			"id": "dd42f053-14b1-40c0-995c-57062b703e91",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{url_auth}}/user/100",
+			"folder": "53685f7b-63e4-a5cc-db41-121a366a4e24",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "urlencoded",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1534220205689,
+			"name": "Get Users",
+			"description": "",
+			"collectionId": "8caa9b7a-07d1-df88-99b7-cd0731e7d658",
+			"responses": []
+		},
+		{
+			"id": "ed7436d1-fbe5-b93b-d8f6-71d50ae42ea7",
+			"headers": "Authorization: Basic Y2xpZW50SWRQYXNzd29yZDpzZWNyZXQ=\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Basic Y2xpZW50SWRQYXNzd29yZDpzZWNyZXQ=",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{url_auth}}/oauth/token",
+			"folder": "53685f7b-63e4-a5cc-db41-121a366a4e24",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "grant_type",
+					"value": "password",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "username",
+					"value": "Morrice256-001",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "password",
+					"value": "pass",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "client_id",
+					"value": "clientIdPassword",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				}
+			],
+			"dataMode": "urlencoded",
+			"tests": "var jsonData = JSON.parse(responseBody);\npostman.setEnvironmentVariable(\"token\", jsonData.access_token);\npostman.setEnvironmentVariable(\"refresh\", jsonData.refresh_token);",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1534213220661,
+			"name": "Autentication - Password",
+			"description": "",
+			"collectionId": "8caa9b7a-07d1-df88-99b7-cd0731e7d658",
+			"responses": []
+		}
+	]
+}
